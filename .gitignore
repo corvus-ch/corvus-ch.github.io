@@ -4,3 +4,6 @@ _site/
 # Sass
 .sass-cache
 
+# Node
+node_modules
+
