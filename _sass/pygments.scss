@@ -1,8 +1,8 @@
 .highlight {
-	background-color: #efefef;
+	background-color: $base3;
 	font-family: $code-font;
 	@include font(12);
-	color: #333332;
+	color: $base00;
 	margin-bottom: 1.5em;
 	@include rounded(4px);
 	pre {
