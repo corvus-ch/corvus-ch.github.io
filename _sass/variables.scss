@@ -34,16 +34,24 @@ $blue      : #268bd2;
 $cyan      : #2aa198;
 $green     : #859900;
 
-$body-color   : $base03;
-$text-color   : $base0;
-$base-color   : $orange;	  
-$comp-color   : $base-color; 
-$border-color : $base-color;
-$white        : $base1;
-$black        : $base02;
-$accent-color : $black;
-$link-color   : $base01;
+$color-main-background           : $base03;
+$color-main-background-highlight : $base02;
+$color-main-text-secondary       : $base01;
+$color-main-text-primary         : $base0;
+$color-main-text-emphasized      : $base1;
+$color-main-link                 : $color-main-text-emphasized;
+$color-main-link-visited         : $color-main-text-primary;
+$color-main-link-highlighted     : $color-main-text-secondary;
+$color-main-selection-background : $color-main-background-highlight;
+$color-main-selection-text       : $orange;
+$color-main-frame                : $green;
+$color-alt-background            : $base3;
+$color-alt-background-highlight  : $base2;
+$color-alt-text-secondary        : $base1;
+$color-alt-text-primary          : $base00;
+$color-alt-text-emphasized       : $base01;
 
+$color-site-text-title: $yellow;
 
 // MEDIA QUERIES ==============================================
 $micro            : "only screen and (min-width: 30em)";

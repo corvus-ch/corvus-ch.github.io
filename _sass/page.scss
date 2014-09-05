@@ -2,8 +2,8 @@ body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	background-color: $body-color;
-	border-top: 5px solid $black;
+	background-color: $color-main-background;
+	border-top: 5px solid $color-main-background-highlight;
 	@media #{$medium} {
 		@include font-rem(20);
 	}
@@ -19,7 +19,7 @@ body {
 		vertical-align: top;
 		margin: 0 0 50px;
 		padding: 4px 20px;
-		background-color: $black;
+		background-color: $color-main-background-highlight;
 		@include rounded(0 0 10px 10px);
 		@include clearfix;
 	}
@@ -30,18 +30,18 @@ body {
 		text-align: center;
 		@include font-rem(14);
 		text-transform: uppercase;
-		color: $white;
+		color: $color-main-text-emphasized;
 		a:hover {
-			@include box-shadow($shadow: inset 0 0 1px $white);
+			@include box-shadow($shadow: inset 0 0 1px $color-main-frame);
 		}
 	}
 	a {
 		display: block;
 		padding: 6px 10px;
-		color: $white;
+		color: $color-main-text-emphasized;
 		@include rounded(4px);
 		&:hover {
-			background-color: lighten($black, 10);
+			background-color: $color-main-background;
 		}
 	}
 }
@@ -80,7 +80,7 @@ body {
 	vertical-align: top;
 	margin: 0;
 	padding: 4px 20px;
-	background-color: $black;
+	background-color: $color-main-background-highlight;
 	@include rounded(0);
 	@media #{$medium} {
 		display: none;
@@ -142,7 +142,7 @@ body {
     -moz-animation-delay: .75s;
     -o-animation-delay: .75s;
     animation-delay: .75s;	
-	a { color: $black; }
+	a { color: $color-site-text-title; }
 }
 .site-description {
 	margin-top: 0;
@@ -171,8 +171,7 @@ body {
 .entry,
 .hentry {
 	@include clearfix;
-	border-bottom: 1px solid lighten($black,80);
-	border-bottom: 1px solid rgba($black,.10);
+	border-bottom: 1px solid $color-main-background-highlight;
 }
 .entry-feature-image {
 	margin: 20px 0 0;
@@ -201,7 +200,7 @@ body {
 	text-transform: uppercase;
 	@include font-rem(16);
 	font-weight: 600;
-	a { color: $text-color; }
+	a { color: $color-main-text-primary; }
 }
 span + .entry-title {
 	margin-top: 0;
@@ -214,7 +213,7 @@ span + .entry-title {
 	line-height: 1;
 	letter-spacing: -3px;
 	a {
-		color: $black;
+		color: inherit;
 		text-decoration: underline;
 	}
 	@media #{$medium} {
@@ -250,7 +249,7 @@ span + .entry-title {
 	display: block;
 	text-transform: uppercase;
 	@include font-rem(14);
-	a { color: $text-color; }
+	a { color: $color-main-text-primary; }
 	@media #{$large} {
 		float: left;
 		width: 150px;
@@ -263,8 +262,7 @@ span + .entry-title {
 		@media #{$large} {
 			display: block;
 			padding: 8px 0;
-			border-bottom: 1px solid lighten($black,80);
-			border-bottom: 1px solid rgba($black,.10);
+			border-bottom: 1px solid $color-main-background-highlight;
 		}
 	}
 }
@@ -292,7 +290,7 @@ span + .entry-title {
 	}
 	p > a,
 	li > a {
-		border-bottom: 1px dotted lighten($link-color, 50);
+		border-bottom: 1px dotted $color-main-background-highlight;
 		&:hover {
 			border-bottom-style: solid;
 		}
@@ -332,8 +330,7 @@ span + .entry-title {
 	list-style-type: none;
 	li {
 		padding: 8px 0;
-		border-bottom: 1px solid lighten($black,80);
-		border-bottom: 1px solid rgba($black,.10);
+		border-bottom: 1px solid $color-main-background-highlight;
 		@include clearfix;
 	}
 	a > span {
@@ -363,7 +360,8 @@ span + .entry-title {
 	a { 
 		padding: 4px 6px;
 		margin: 2px;
-		background-color: lighten($black, 90);
+		color: $color-alt-text-emphasized;
+		background-color: $color-alt-background;
 		@include rounded(4px);
 		text-decoration: none;
 		span { 
@@ -395,9 +393,8 @@ span + .entry-title {
 	font-family: $alt-font;
 	@include font-rem(14);
 	font-style: italic;
-	color: lighten($text-color,20);
 	a {
-		color: lighten($text-color,20);
+		color: $cyan;
 	}
 }
 
@@ -407,7 +404,7 @@ span + .entry-title {
 	margin: 1em 0 2em;
 	a {
 		padding: 4px 8px;
-		&:hover { color:$black; }
+		&:hover { color: $color-main-text-secondary; }
 	}
 }
 
@@ -437,15 +434,15 @@ span + .entry-title {
 #goog-wm-sb {
 	display: inline-block;
 	padding: 8px 20px;
-	background-color: $black;
-	color: $white;
-	border: 2px solid $black !important;
+	background-color: $color-main-background-highlight;
+	color: $color-main-text-emphasized;
+	border: 2px solid $color-main-background-highlight !important;
 	@include rounded(20px);
 	&:visited {
-		color: $white;
+		color: $color-main-text-emphasized;
 	}
 	&:hover {
-		background-color: $white;
-		color: $black;
+		background-color: $color-main-text-emphasized;
+		color: $color-main-background-highlight;
 	}
 }
