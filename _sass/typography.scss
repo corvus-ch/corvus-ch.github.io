@@ -1,126 +1,128 @@
 // Body
 // --------------------------------------------------
 body {
-	font-family: $base-font;
-	color: $color-main-text-primary;
+  font-family: $base-font;
+  color: $color-main-text-primary;
 }
 
 // Headings
 // --------------------------------------------------
 h1, h2, h3, h4, h5, h6 {
-	font-family: $heading-font;
+  font-family: $heading-font;
 }
 
 // Links
 // --------------------------------------------------
-a { 
-	text-decoration: none;
-	color: $color-main-link;
-	&:visited {
-		color: $color-main-link-visited;
-	}
-	&:hover {
-		color: $color-main-link-highlighted;
-	}
-	&:focus {
-		outline: thin dotted;
-		color: $color-main-link-highlighted;
-	}
-	&:hover, 
-	&:active { 
-		outline: 0; 
-	}
+a {
+  text-decoration: none;
+  color: $color-main-link;
+  &:visited {
+    color: $color-main-link-visited;
+  }
+  &:hover {
+    color: $color-main-link-highlighted;
+  }
+  &:focus {
+    outline: thin dotted;
+    color: $color-main-link-highlighted;
+  }
+  &:hover,
+  &:active {
+    outline: 0;
+  }
 }
 
 .link-arrow {
-	font-weight: 100;
-	text-decoration: underline;
-	font-style: normal;
+  font-weight: 100;
+  text-decoration: underline;
+  font-style: normal;
 }
 
 // Figures
 // --------------------------------------------------
 figcaption {
-	padding-top: 10px;
-	@include font(14);
-	line-height: 1.3;
-	color: $color-main-text-emphasized;
+  padding-top: 10px;
+  @include font(14);
+  line-height: 1.3;
+  color: $color-main-text-emphasized;
 }
 
 // Feature Image Caption
 // --------------------------------------------------
 .image-credit {
-	margin: 0 auto;
-	max-width: 440px;
-	padding-top: 5px;
-	padding-right: 20px;
-	padding-left: 20px;
-	text-align: right;
-	@include font(14);
-	line-height: 1.3;
-	color: $color-main-text-emphasized;
-	@include clearfix();
-	@media #{$medium} {
-		max-width: 760px;
-		padding-right: 60px;
-		padding-left: 60px;
-	}
-	@media #{$large} {
-		max-width: 960px;
-	}
-	a {
-		color: $color-main-text-emphasized;
-	}
+  margin: 0 auto;
+  max-width: 440px;
+  padding-top: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: right;
+  @include font(14);
+  line-height: 1.3;
+  color: $color-main-text-emphasized;
+  @include clearfix();
+  @media #{$medium} {
+    max-width: 760px;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  @media #{$large} {
+    max-width: 960px;
+  }
+  a {
+    color: $color-main-text-emphasized;
+  }
 }
 
 // Note text
 // --------------------------------------------------
 .notice {
-	margin-top: 1.5em;
-	padding: .5em 1em;
-	text-indent: 0;
-	@include font-rem(16);
-	background-color: $color-alt-background;
-	border: 1px solid $color-alt-background-highlight;
-	@include rounded(4px);
+  margin-top: 1.5em;
+  padding: .5em 1em;
+  text-indent: 0;
+  @include font-rem(16);
+  background-color: $color-alt-background;
+  border: 1px solid $color-alt-background-highlight;
+  @include rounded(4px);
 }
 
 // Blockquotes
 // --------------------------------------------------
 blockquote {
-	font-family: $alt-font;
-	font-style: italic;
-	@include font-size(16);
-	padding-left: 20px;
-	border-left: 8px solid $color-main-background-highlight;
+  font-family: $alt-font;
+  font-style: italic;
+  @include font-size(16);
+  padding-left: 20px;
+  border-left: 8px solid $color-main-background-highlight;
 }
 
 // Footnotes
 // --------------------------------------------------
 .footnotes {
-	@include font(14);
-	font-family: $base-font;
+  @include font(14);
+  font-family: $base-font;
 }
 
 // Code
 // --------------------------------------------------
 tt, code, kbd, samp, pre {
-	font-family: $code-font;
+  font-family: $code-font;
 }
+
 p,
-li { 
-	code {
-		@include font(12);
-		white-space: nowrap;
-		margin: 0 2px;
-		padding: 0 5px;
-		color: $base00;
-		border: 1px solid $base3;
-		background-color: $base3;
-		@include rounded(3px);
-	}
+li {
+  code {
+    @include font(12);
+    white-space: nowrap;
+    margin: 0 2px;
+    padding: 0 5px;
+    color: $base00;
+    border: 1px solid $base3;
+    background-color: $base3;
+    @include rounded(3px);
+  }
 }
+
 pre {
-	@include font(12);
-	overflow-x: auto;
+  @include font(12);
+  overflow-x: auto;
 }
