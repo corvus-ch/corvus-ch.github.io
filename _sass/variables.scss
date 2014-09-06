@@ -8,13 +8,11 @@ $alt-font: 'volkhov', serif;
 $doc-font-size: 16;
 $doc-line-height: 24;
 
-
 // set-up the body font-size / line-height
 body {
-	margin-top: 0px + $doc-line-height;
-	font-size: 0px + $doc-font-size;	
+  margin-top: 0px + $doc-line-height;
+  font-size: 0px + $doc-font-size;
 }
-
 
 // COLORS =====================================================
 $base03    : #002b36;
@@ -45,13 +43,14 @@ $color-main-link-highlighted     : $color-main-text-secondary;
 $color-main-selection-background : $color-main-background-highlight;
 $color-main-selection-text       : $orange;
 $color-main-frame                : $green;
+
 $color-alt-background            : $base3;
 $color-alt-background-highlight  : $base2;
 $color-alt-text-secondary        : $base1;
 $color-alt-text-primary          : $base00;
 $color-alt-text-emphasized       : $base01;
 
-$color-site-text-title: $yellow;
+$color-site-text-title           : $yellow;
 
 // MEDIA QUERIES ==============================================
 $micro            : "only screen and (min-width: 30em)";
