@@ -1,8 +1,8 @@
 # Site wide configuration
 
-title: corvus-ch.name
+title: Christian Häusler
 locale: en_US
-description:
+description: About software architecture and security in the cloud
 logo: site-logo.png
 search: true
 url: 
@@ -45,8 +45,8 @@ owner:
   tumblr:
   google:
     plus:
-    analytics:
-    verify:
+    analytics: UA-54526872-1
+    verify: j7xP7pokcNVAcQgFz3SXFCX7EXXMwpyHHDqxU8AAh_A
     ad-client:
     ad-slot: 
   bing-verify:
