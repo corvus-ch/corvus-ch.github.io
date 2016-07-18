@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/corvus_ch
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://corvus-ch.name
+  * I am corvus_ch (https://keybase.io/corvus_ch) on keybase.
+  * I have a public key with fingerprint E3FA ACF1 06FA 1B81 C35F  D24F ED45 DBE6 B88E 3269
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01205fa53ef3fbcff56c981a510b221c281f7c37adef4a86fc88c77ef9951658384b0a",
+            "fingerprint": "e3faacf106fa1b81c35fd24fed45dbe6b88e3269",
+            "host": "keybase.io",
+            "key_id": "ed45dbe6b88e3269",
+            "kid": "01019484bd1f3716f68f70f15852caa9d8ccdeda93e96acc73e920ba8e334da3e4480a",
+            "uid": "321e7ba40a5be4fd8bec54ab59cad819",
+            "username": "corvus_ch"
+        },
+        "service": {
+            "hostname": "corvus-ch.name",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1468852566,
+    "expire_in": 157680000,
+    "prev": "932c487e894d7be00823a500caa1f942d4e757d17d3210017ed33989c943f248",
+    "seqno": 14,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Comment: GPGTools - https://gpgtools.org
+
+owFtUntQVFUY38UFa4mEYIcoBLrptMJC933PXYYRSwQcK3IMMM313nPPhctj37AQ
+kNBUlqAhFYxp6IyVWGFNWhFBgg+CgYGMkEDLAmJgakWaUiBkusvkH810/vnmfOf3
+/R7fnNqgFRq91ptyZbLlAKloe6dFTVbNdGEZJtqkUsxchuWj5YIKJORyW/IVCTNj
+OEHijCwwFJIpWYSyzLCQB4TAELhIkgQkASFzkOIECcm0AFgZAgA5Dsk8zxAsAyhA
+i7iAmTBZseYgp92pWN0qLaJkQYAygbOyQIiAgBQjSyQtI4lmJBGxIgCIIlleHcy1
+uXwTqjlRcKEExab21Itl2d7/4O/4xgmeVsUlQqY4gpVZIHO4TDCAIaEg8BKAUEKS
+wFOIZwUIObWSuCioNBQtCRSiabDsu2iZjiIJxIkCjQuMiGhZAiKCDC2IDA8FCRA+
+3SIXclqFQqSioc1ZXOSywFyswoSp7WIFIt9mfVH+A4mHuQnLDRNmd9rcNmgrUN9y
+3W672TfqLrX7sB4kWv5lsYiKVVI3qQ4UI6dLsVkxM6EioVvx0RI0C9SADMuaMFRi
+V5zIovgQDMcCXD0+GVSsUvIUCekdgEOApyVORDgOSEpgcFzdDSHzNCnRiGM4ieAk
+NTqOExySKIoHPORpSiZpgPmCOaw2n6ZqVMhRSV1KjlVwFzkRVqF/zS9Sp9HqNQH+
+fr5PptHfHXzn5w1VrloyPp2ZnWrc3jGGEhffKZWNbipwduStM4Gr7MciKhZTf7i/
+OP1c2MrLi/uvGlrKhwfiL760ee3j84+1bnI9PLEnoKHA3b335ns5G0Id0YEZqdqZ
+nSN/p21o96b1xd/4JENz6ZXJ5MOD66ZoKWrrUPds1tmaDmohL290KMRz6tWq6J+e
+P1f1x+8h4bZQt72Xilupm6xuuLC7zRsb/sR91Owvze9bsLuwCU9Nr3kuOOmbhLTB
+9K8/SA6vjA1znbln4GI0TdZ7DvR8XFk/8P2XdePfHbzNXjvmFz5cpX8zuQV/+9PM
+FkOZQVwd80VWZEVf0/jqo0e8oZtmZiKu/1qXYN5Xm7nCAYfiLkUtnGyYOexp3rqr
+q7Cra/Bma8ZnQReWHpk/uj89ZLjn2ZKRF6JaDjUZMuZMnixr0XTk4kKwN0BHOG41
+Nr28fuOu/vNJo1F/PjVXfnasK6Jat2V3u6vPsE0/sub6X+Ft0/2fp5e4yuePdI6P
+s/X6fd8W9tXqm/3aq19vzfc/dX7qykeGNUHt9nsfuJqy2Kk7vpi203iZ8WpuJN3a
+/lywoxJGaP2ojZsnrsUMP9qYslYAe05q62JOTBoT859RXgxtTExNS4g7/pWuJF3U
+RcYUrl9KnbUfGugezHZ4O7L3/vjkz21ht42jPcq20wfH+k9MjHSCN9ZNVT3kf/rB
+2NOmid8+3PJuXsGOfwA=
+=Tvy3
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/corvus_ch
+
+==================================================================
+
