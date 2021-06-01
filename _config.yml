@@ -1,57 +1,47 @@
 # Site wide configuration
 
 title: Christian Häusler
-locale: en_US
+locale: en-US
 description: About software architecture and security in the cloud
-logo: site-logo.png
-search: true
-url: 
+logo: images/site-logo.png
 
-
-# Jekyll configuration
-
-permalink:   /:categories/:title/
-markdown:    kramdown
-highlighter: pygments
-sass:
-  sass_dir: _sass
-  style: compressed
-gems:
-  - jekyll-sitemap
-
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  use_coderay: false
-
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
-
+# Theming
+remote_theme: "mmistakes/so-simple-theme@3.2.0"
+skin: "/assets/css/skins/dark.css"
 
 # Site owner
-owner:
+author:
   name: Christian Häusler
-  avatar: christian.jpg
+  picture: images/christian.jpg
   email: haeusler.christian@mac.com
-  disqus-shortname: corvus-ch
-  twitter: corvus_ch
-  github: corvus-ch
-  stackexchange: http://stackexchange.com/users/949088/corvus
-  linkedin: christianhaeusler
-  instagram:
-  flickr:
-  tumblr:
-  google:
-    plus:
-    analytics: UA-54526872-1
-    verify: j7xP7pokcNVAcQgFz3SXFCX7EXXMwpyHHDqxU8AAh_A
-    ad-client:
-    ad-slot: 
-  bing-verify:
+  links:
+    - &twitter
+      title: Twitter
+      url: http://twitter.com/corvus_ch
+      icon: fab fa-twitter-square
+    - &linkedin
+      title: Linkedin
+      url: http://linkedin.com/in/christianhaeusler
+      icon: fab fa-linkedin
+    - &github
+      title: GitHub
+      url: http://github.com/corvus-ch
+      icon: fab fa-github-square
 
-# Front matter defaults
+# Comments
+disqus:
+  shortname: corvus-ch
+
+# Footer Links
+footer_links:
+  - *twitter
+  - *linkedin
+  - *github
+  - title: Feed
+    url: atom.xml
+    icon: fas fa-rss-square
+
+# Front Matter Defaults
 defaults:
   - scope:
       path: ""

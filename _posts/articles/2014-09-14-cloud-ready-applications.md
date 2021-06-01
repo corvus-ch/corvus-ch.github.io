@@ -2,6 +2,7 @@
 title: Bringing a web application to the cloud
 categories: articles
 excerpt: Bringing a web application to the cloud adds some restricitons and requires to handle some stuff differently.
+permalink: /articles/cloud-ready-applications/
 ---
 
 Being a web developer for quite some time now, I recently had the change to get
