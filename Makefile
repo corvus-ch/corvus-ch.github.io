@@ -7,7 +7,7 @@ SHELL := bash
 
 DOCKER_IMG  ?= corvus-ch/corvus-ch.name
 DOCKER_CMD  ?= docker
-DOCKER_ARGS ?= run --rm --volume="$${PWD}:/srv/jekyll" --workdir=/srv/jekyll -p 4000:4000 --env JEKYLL_ENV
+DOCKER_ARGS ?= run --rm --user="$$(id -u)" --volume="$${PWD}:/srv/jekyll" --workdir=/srv/jekyll -p 4000:4000 --env JEKYLL_ENV
 
 JEKYLL_ARGS ?=
 
