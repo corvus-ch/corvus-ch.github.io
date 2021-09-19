@@ -3,14 +3,14 @@
 	"file": "dark.css",
 	"sources": [
 		"dark.scss",
-		"../../tmp/jekyll-remote-theme-20210919-1-1i9o2b/_sass/so-simple/_functions.scss",
-		"../../tmp/jekyll-remote-theme-20210919-1-1i9o2b/_sass/so-simple/functions/_color.scss",
-		"../../tmp/jekyll-remote-theme-20210919-1-1i9o2b/_sass/so-simple/functions/_em.scss",
-		"../../tmp/jekyll-remote-theme-20210919-1-1i9o2b/_sass/so-simple/functions/_fluid-type.scss",
-		"../../tmp/jekyll-remote-theme-20210919-1-1i9o2b/_sass/so-simple/functions/_yiq.scss",
-		"../../tmp/jekyll-remote-theme-20210919-1-1i9o2b/_sass/so-simple/_variables.scss",
-		"../../tmp/jekyll-remote-theme-20210919-1-1i9o2b/_sass/so-simple/_notices.scss",
-		"../../tmp/jekyll-remote-theme-20210919-1-1i9o2b/_sass/so-simple/_skin.scss"
+		"../../tmp/jekyll-remote-theme-20210919-1-ba041l/_sass/so-simple/_functions.scss",
+		"../../tmp/jekyll-remote-theme-20210919-1-ba041l/_sass/so-simple/functions/_color.scss",
+		"../../tmp/jekyll-remote-theme-20210919-1-ba041l/_sass/so-simple/functions/_em.scss",
+		"../../tmp/jekyll-remote-theme-20210919-1-ba041l/_sass/so-simple/functions/_fluid-type.scss",
+		"../../tmp/jekyll-remote-theme-20210919-1-ba041l/_sass/so-simple/functions/_yiq.scss",
+		"../../tmp/jekyll-remote-theme-20210919-1-ba041l/_sass/so-simple/_variables.scss",
+		"../../tmp/jekyll-remote-theme-20210919-1-ba041l/_sass/so-simple/_notices.scss",
+		"../../tmp/jekyll-remote-theme-20210919-1-ba041l/_sass/so-simple/_skin.scss"
 	],
 	"sourcesContent": [
 		"@charset \"utf-8\";\n\n@import \"so-simple/functions\";\n@import \"so-simple/variables\";\n@import \"so-simple/notices\";\n\n/* Colors */\n$solarized-base03    : #002b36;\n$solarized-base02    : #073642;\n$solarized-base01    : #586e75;\n$solarized-base00    : #657b83;\n$solarized-base0     : #839496;\n$solarized-base1     : #93a1a1;\n$solarized-base2     : #eee8d5;\n$solarized-base3     : #fdf6e3;\n$solarized-yellow    : #b58900;\n$solarized-orange    : #cb4b16;\n$solarized-red       : #dc322f;\n$solarized-magenta   : #d33682;\n$solarized-violet    : #6c71c4;\n$solarized-blue      : #268bd2;\n$solarized-cyan      : #2aa198;\n$solarized-green     : #859900;\n\n$base-color: $solarized-base0 !default;\n$text-color: $solarized-base0 !default;\n$accent-color: $solarized-cyan !default;\n$nav-color: $solarized-base1 !default;\n$background-color: $solarized-base03 !default;\n$nav-background-color: $solarized-base02 !default;\n$code-background-color: $solarized-base03 !default;\n$border-color: $solarized-base02 !default;\n\n$primary-color: $solarized-base0 !default;\n$success-color: $solarized-green !default;\n$warning-color: $solarized-yellow !default;\n$danger-color: $solarized-red !default;\n$info-color: $solarized-blue !default;\n\n$base00: $solarized-base02;\n$base01: $solarized-red;\n$base02: $solarized-green;\n$base03: $solarized-yellow;\n$base04: $solarized-blue;\n$base05: $solarized-magenta;\n$base06: $solarized-cyan;\n$base07: $solarized-base2;\n$base08: $solarized-base03;\n$base09: $solarized-orange;\n$base0a: $solarized-base01;\n$base0b: $solarized-base00;\n$base0c: $solarized-base0;\n$base0d: $solarized-violet;\n$base0e: $solarized-base1;\n$base0f: $solarized-base3;\n\n@import \"so-simple/skin\";\n",
