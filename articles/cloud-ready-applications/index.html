@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!--
+    So Simple Jekyll Theme 3.2.0
+    Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+    Free for personal and commercial use under the MIT license
+    https://github.com/mmistakes/so-simple-theme/blob/master/LICENSE
+-->
+<html lang="en-US" class="no-js">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+
+  
+    <title>Bringing a web application to the cloud</title>
+    <meta name="description" content="Bringing a web application to the cloud adds some restricitons and requires to handle some stuff differently.">
+    <link rel="canonical" href="/articles/cloud-ready-applications/">
+  
+
+  <script>
+    /* Cut the mustard */
+    if ( 'querySelector' in document && 'addEventListener' in window ) {
+      document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + 'js';
+    }
+  </script>
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/skins/dark.css">
+  <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+</head>
+
+
+  <body class="layout--post  bringing-a-web-application-to-the-cloud">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#primary-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+  <div class="navigation-wrapper">
+    <a href="#menu-toggle" id="menu-toggle">Menu</a>
+    <nav id="primary-nav" class="site-nav animated drop">
+      <ul><li><a href="/about/">About</a></li><li><a href="/">Articles</a></li></ul>
+    </nav>
+  </div><!-- /.navigation-wrapper -->
+
+
+    <header class="masthead">
+  <div class="wrap">
+    
+      <a href="/" class="site-logo" rel="home" title="Christian Häusler">
+        <img src="/images/site-logo.png" class="site-logo-img animated fadeInDown" alt="Christian Häusler">
+      </a>
+    
+    
+    
+      
+        <div class="site-title animated fadeIn"><a href="/">Christian Häusler</a></div>
+      
+      <p class="site-description animated fadeIn" itemprop="description">About software architecture and security in the cloud</p>
+    
+  </div>
+</header><!-- /.masthead -->
+
+
+    <main id="main" class="main-content" aria-label="Content">
+  <article class="h-entry">
+    
+
+    <div class="page-wrapper">
+      <header class="page-header">
+        
+        
+          <h1 id="page-title" class="page-title p-name">Bringing a web application to the cloud
+</h1>
+        
+      </header>
+
+      <div class="page-sidebar">
+        <div class="page-author h-card p-author"><img src="/images/christian.jpg" class="author-avatar u-photo" alt="Christian Häusler"><div class="author-info"><div class="author-name">
+        <em>by</em> <span class="p-name">Christian Häusler</span>
+      </div><ul class="author-links"><li class="author-link">
+            <a class="u-url" rel="me" href="http://twitter.com/corvus_ch"><i class="fab fa-twitter-square fa-lg" title="Twitter"></i></a>
+          </li><li class="author-link">
+            <a class="u-url" rel="me" href="http://linkedin.com/in/christianhaeusler"><i class="fab fa-linkedin fa-lg" title="Linkedin"></i></a>
+          </li><li class="author-link">
+            <a class="u-url" rel="me" href="http://github.com/corvus-ch"><i class="fab fa-github-square fa-lg" title="GitHub"></i></a>
+          </li></ul>
+    <time class="page-date dt-published" datetime="2014-09-14T00:00:00-05:00"><a class="u-url" href="">September 14, 2014</a>
+</time>
+
+  </div>
+</div>
+
+        
+        
+      </div>
+
+      <div class="page-content">
+        <div class="e-content">
+          <p>Being a web developer for quite some time now, I recently had the change to get
+involved in a project where we are building a platform as a service (PaaS).
+Needless to say that I took the changes and tried to deploy a few apps of my
+own. I found that bringing an app to the cloud needs some preparation and there
+are two things I consider being crucial: a cloud ready app must be stateless and
+must be able to use environment variables for configuration.</p>
+
+<p>A PaaS runs your app in container or some other form of isolation. Fact is that
+the storage is ephemeral and everything you have written to the file system will
+be lost once the app gets restarted and if you are using horizontal scaling, the
+files of the instances are not shared with each other.  Ok, no local filesystem
+but where do my user uploaded files go? Well, we should use a storage service
+like OpenStacks Swift storage or Amazons S3.</p>
+
+<p>The two PaaS systems I know, which are <a href="https://www.heroku.com/">Heroku</a> and
+<a href="http://cloudfoundry.org/index.html">Cloud Foundry</a>, allow you to bind services
+like mysql databases, Memcached or the above mentioned storage services to your
+app. They are doing this by injecting the access credentials of the services
+into your apps execution environment as environment variables. In order to use
+those services, your app must be capable of picking them up.</p>
+
+<p>So bringing a web application adds some restrictions and requires you to handle
+some stuff differently. For the better or worse? I can not tell yet.</p>
+
+
+        </div>
+
+        
+
+        
+          
+  <div class="page-comments">
+    <div id="disqus_thread"></div>
+    <script>
+      var disqus_config = function () {
+        this.page.url = '/articles/cloud-ready-applications/';
+        this.page.identifier = '/articles/cloud-ready-applications/';
+      };
+
+      (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://corvus-ch.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  </div>
+
+
+        
+
+        <nav class="page-pagination" role="navigation">
+  
+
+  
+</nav>
+
+      </div>
+    </div>
+  </article>
+</main>
+
+
+    <footer id="footer" class="site-footer">
+  <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+<div class="social-icons"><a class="social-icon" href="http://twitter.com/corvus_ch"><i class="fab fa-twitter-square fa-2x" title="Twitter"></i></a><a class="social-icon" href="http://linkedin.com/in/christianhaeusler"><i class="fab fa-linkedin fa-2x" title="Linkedin"></i></a><a class="social-icon" href="http://github.com/corvus-ch"><i class="fab fa-github-square fa-2x" title="GitHub"></i></a><a class="social-icon" href="/atom.xml"><i class="fas fa-rss-square fa-2x" title="Feed"></i></a></div><div class="copyright">
+    
+      <p>&copy; 2021 Christian Häusler. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/mmistakes/so-simple-theme" rel="nofollow">So Simple</a>.</p>
+    
+  </div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script>
+
+
+  </body>
+
+</html>
