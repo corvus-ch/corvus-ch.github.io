@@ -7,7 +7,7 @@ logo: images/site-logo.png
 url: https://corvus-ch.name
 
 # Theming
-remote_theme: "mmistakes/so-simple-theme@3.2.0"
+theme: jekyll-theme-so-simple
 skin: "/assets/css/skins/dark.css"
 
 # Site owner
