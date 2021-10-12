@@ -40,12 +40,3 @@ footer_links:
   - title: Feed
     url: atom.xml
     icon: fas fa-rss-square
-
-# Front Matter Defaults
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
-      comments: true
