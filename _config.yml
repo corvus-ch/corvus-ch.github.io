@@ -38,5 +38,9 @@ footer_links:
   - *linkedin
   - *github
   - title: Feed
-    url: atom.xml
+    url: feed.xml
     icon: fas fa-rss-square
+
+# Build settings
+plugins:
+  - jekyll-feed
