@@ -44,3 +44,9 @@ footer_links:
 # Build settings
 plugins:
   - jekyll-feed
+
+exclude:
+  - Dockerfile
+  - Gemfile
+  - Gemfile.lok
+  - Makefile
