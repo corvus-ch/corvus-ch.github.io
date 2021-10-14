@@ -1,6 +1,0 @@
----
-layout: page
-modified: 2014-09-06
----
-
-Maybe I will find the time to write some real stuff in future.
